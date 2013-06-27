@@ -1,75 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>pill box</title>
-<meta charset="utf-8" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="HandheldFriendly" content="true" />
-<link rel="stylesheet" href="styles/style.css" />
-<script language="javascript" src="scripts/jquery-1.8.2.min.js"></script>
-<script language="javascript" src="scripts/jquery.pillbox.js"></script>
-<script>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
 
-  $(function(){
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-	$('#add-skills-btn').pillBox({pillBox:'#pill-box-skills'});
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Jquery-pillbox by dinoopm</title>
+  </head>
 
-  
-	$('#get-skills').click(function(){
-		alert($('#pill-box-skills').getpills());
-	});
-	
-	
-  });
+  <body>
+    <a id="forkme_banner" href="https://github.com/dinoopm/jquery-pillbox">View on GitHub</a>
+    <div class="shell">
 
-</script>
-</head>
-<body>
-<table border="0">
- <tr>
-   <td width="300">
-   
-	   <label>Add your skills</label>
-		<div id="add-skills-btn" class="pill-menu-btn"><a href="#" class="pill-menu-link">add</a>
-			<div class="pillMenu">
-			  <button class="done-btn">Done</button>  
-			    <div class="search">
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Jquery-pillbox</h1>
+            <h2>A visual select box with rich user interactivity </h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-				<input type="text" class="search-txt" name="search" placeholder="Search" />
-				<div class="search-btn"></div>				
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/dinoopm/jquery-pillbox/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/dinoopm/jquery-pillbox/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
-			    </div>
-				<div class="list-wrapper">
-				 <ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>Javascript</li>
-					<li>JQuery</li>
-					<li>Backbone</li>
-					<li>handlebar</li>
-				 </ul>
-				
-				</div>
-		
-				<div class="arrow"></div>
-			</div>
-		</div>
 
-   </td>
-    <td>
-    
-    <div class="pill-box" id="pill-box-skills">
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="jquery-pillbox" class="anchor" href="#jquery-pillbox"><span class="octicon octicon-link"></span></a>jquery-pillbox</h1>
+
+<p>A visual select box with rich user interactivity </p>
+
+<p>Author: Dinoop mathew
+E-mail: <a href="mailto:dinoopm@gmail.com">dinoopm@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/dinoopm">dinoopm</a> can be found on <a href="https://github.com/dinoopm/jquery-pillbox">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
     </div>
-	<p>
-    <button id="get-skills">Get Values</button>
-	</p>
-    </td>
- </tr>
 
-</table>
-
-
-
-</body>
+    
+  </body>
 </html>
