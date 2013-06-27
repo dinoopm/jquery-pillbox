@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>pill box</title>
+<meta charset="utf-8" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="HandheldFriendly" content="true" />
+<link rel="stylesheet" href="styles/style.css" />
+<script language="javascript" src="scripts/jquery-1.8.2.min.js"></script>
+<script language="javascript" src="scripts/jquery.pillbox.js"></script>
+<script>
+
+  $(function(){
+
+  $('#add-skills-btn').pillBox({pillBox:'#pill-box-skills'});
+
+  
+	$('#get-skills').click(function(){
+		alert($('#pill-box-skills').getpills());
+	});
+	
+	
+  });
+
+</script>
+</head>
+<body>
+<table border="0">
+ <tr>
+   <td width="300">
+   
+	   <label>Add your skills</label>
+		<div id="add-skills-btn" class="pill-menu-btn"><a href="#" class="pill-menu-link">add</a>
+			<div class="pillMenu">
+			  <button class="done-btn">Done</button>  
+			    <div class="search">
+
+				<input type="text" class="search-txt" name="search" placeholder="Search" />
+				<div class="search-btn"></div>				
+
+			    </div>
+				<div class="list-wrapper">
+				 <ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+					<li>JQuery</li>
+					<li>Backbone</li>
+					<li>handlebar</li>
+				 </ul>
+				
+				</div>
+		
+				<div class="arrow"></div>
+			</div>
+		</div>
+
+   </td>
+    <td>
+    
+    <div class="pill-box" id="pill-box-skills">
+    </div>
+	<p>
+    <button id="get-skills">Get Values</button>
+	</p>
+    </td>
+ </tr>
+
+</table>
+
+
+
+</body>
+</html>
