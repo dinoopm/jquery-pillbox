@@ -1,5 +1,5 @@
-jquery-pillbox
-==============
+#jquery-pillbox
+
 
 A visual select box with rich user interactivity 
 
